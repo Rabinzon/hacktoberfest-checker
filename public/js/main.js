@@ -71,6 +71,7 @@ HacktoberfestChecker.prototype.getUsernameIssues = function(e) {
 HacktoberfestChecker.prototype.usernameIssuesSuccess = function(html) {
     this.results.html(html);
     window.twttr.widgets.load();
+    window.FB.XFBML.parse();
 };
 /**
  * In case of an error during API call, display an error message
